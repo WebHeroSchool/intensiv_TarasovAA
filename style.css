@@ -1,69 +1,68 @@
 * {
-    font-family: pt_serif, Arial, Helvetica, Sans-serif;
+  font-family: pt_serif, Arial, Helvetica, Sans-serif;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 .wrapper {
-    margin: auto;
-    width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
 }
 
 .logo {
-    position: relative;
-    padding: 40px 0;
-    font-family: PT Serif;
-    padding-left: 51px;
-    font: bold 24px/32px pt_serif, arial, helvetica, sans-serif;
-    letter-spacing: 0px;
+  position: relative;
+  padding: 40px 0;
+  font-family: PT_Serif;
+  padding-left: 51px;
+  font: bold 24px/32px pt_serif, arial, helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
 .logo__circle {
-    position: absolute;
-    left: 0;
-    left: 6px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    opacity: 0.7;
+  position: absolute;
+  left: 0;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 .logo__circle_color_dark-blue {
-    background: #0056ec;
+  background: #0056ec;
 }
 
 .logo__circle_color_blue {
-    left: 8px;
-    left: 14px;
-    top: 56%;
-    background: #c8dbfb;
+  left: 8px;
+  left: 14px;
+  top: 56%;
+  background: #c8dbfb;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    font-family: Roboto;
-
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
 }
 
 .menu__item {
-    position: relative;
-    margin-right: 26px;
-    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    transition: opacity .5s;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.5s;
 }
 
 /*.menu__item:after {
@@ -79,17 +78,17 @@ body {
 }
 */
 .menu__item_active::after {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 100%;
-    left: 0;
-    height: 3px;
-    background: #0056EC;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 3px;
+  background: #0056ec;
 }
 
 .menu__item:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 /*.menu__item:hover:after, .menu__item_active:after {
@@ -98,49 +97,60 @@ body {
 }
 */
 .menu__item:hover:after {
-    position: absolute;
-    left: 0;
-    display: block;
-    content: ";
-    width:100%;
-    height: 3px;
-    background: #0056EC;
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
 }
 
 .menu__item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.main-section {
-    display: flex;
-    justify-content: space-between;
+.main {
+  padding: 0 65% 100% 0;
+  background: top right no-repeat url(Frame.svg);
 }
 
-.main-content {
-    width: 36%;
+.main__title {
+  margin: 0 0 40px 0;
+  padding-top: 74px;
+  font-family: pt_serif, arial, helvetica, sans-serif;
+  font-size: 66px;
+  font-weight: bold;
+  font-style: normal;
+  align-items: center;
+  letter-spacing: 2px;
 }
 
-.main-content__title {
-    font-family: PT Serif;
-    font-size: 50px;
+.main__subtitle {
+  margin: 0 0 41px 0;
+  margin-bottom: 41px;
+  font-family: Roboto, arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
 }
 
-.main-content__paragraph,
-.main-content__request {
-    font-family: Roboto;
+.main__button {
+  display: inline-block;
+  font: 17px Roboto, arial, helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #0056ec;
+  padding: 19px 23px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.5s;
 }
 
-.main-content__paragraph {
-    font-size: 18px;
-    margin-bottom: 41px;
+.main__button:hover {
+  opacity: 0.5;
 }
 
-.main-content__request {
-    font-size: 14px;
-    width: 209px;
-    height: 44px;
-}
-
-.image-content {
-    padding-right: 514px;
+.main__title-text_highlight {
+  background: #ecf3ff;
 }
